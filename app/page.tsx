@@ -7,19 +7,19 @@ const certifications = [
     title: "Virtual Assistant Certificate",
     issuer: "Online Course",
     date: "2026",
-    image: "/certifications/certificate-1.jpg",
+    image: "/certifications/certificate1.jpg",
   },
   {
     title: "Data Science Essentials",
     issuer: "Cisco Networking Academy",
     date: "2026",
-    image: "/certifications/certificate-2.jpg",
+    image: "/certifications/certificate2.jpg",
   },
   {
     title: "Additional Certification",
     issuer: "Certificate Issuer",
     date: "2026",
-    image: "/certifications/certificate-3.jpg",
+    image: "/certifications/certificate3.jpg",
   },
 ];
 
@@ -57,8 +57,12 @@ export default function Home() {
             <a href="#certifications" className="hover:text-cyan-400">
               Certifications
             </a>
-            <a href="#projects" className="hover:text-cyan-400">Projects</a>
-            <a href="#contact" className="hover:text-cyan-400">Contact</a>
+            <a href="#projects" className="hover:text-cyan-400">
+              Projects
+            </a>
+            <a href="#contact" className="hover:text-cyan-400">
+              Contact
+            </a>
           </div>
         </div>
       </nav>
@@ -69,7 +73,23 @@ export default function Home() {
 
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
 
-          <div>
+          {/* PROFILE + INTRO */}
+          <div className="flex flex-col items-start">
+
+            {/* PROFILE PICTURE */}
+            <div className="mb-8">
+              <div className="relative h-40 w-40 overflow-hidden rounded-full border-2 border-cyan-400/40 bg-white/[0.03] shadow-2xl shadow-cyan-500/20 md:h-48 md:w-48">
+                <img
+                  src="/profile.jpg"
+                  alt="Mattew profile picture"
+                  className="h-full w-full object-cover"
+                />
+
+                {/* Glow */}
+                <div className="pointer-events-none absolute inset-0 rounded-full ring-1 ring-cyan-400/20" />
+              </div>
+            </div>
+
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-cyan-400">
               IT Fresh Graduate
             </p>
@@ -104,6 +124,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* RIGHT SIDE IT DESIGN */}
           <div className="flex justify-center">
             <div className="relative flex h-72 w-72 items-center justify-center rounded-full border border-cyan-400/20 bg-white/[0.03] shadow-2xl shadow-cyan-500/10 md:h-96 md:w-96">
               <div className="absolute inset-5 rounded-full border border-white/10" />
@@ -246,16 +267,19 @@ export default function Home() {
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
-                {["Web Development", "Geo Mapping", "Inventory", "Database"].map(
-                  (tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-400"
-                    >
-                      {tag}
-                    </span>
-                  )
-                )}
+                {[
+                  "Web Development",
+                  "Geo Mapping",
+                  "Inventory",
+                  "Database",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
 
