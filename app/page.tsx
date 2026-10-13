@@ -4,22 +4,40 @@ import { useState } from "react";
 
 const certifications = [
   {
-    title: "Virtual Assistant Certificate",
-    issuer: "Online Course",
+    title: "On the Job Training",
+    issuer: "Dalubhasaan ng Lungsod ng San Pablo",
     date: "2026",
     image: "/certifications/certificate1.jpg",
   },
   {
-    title: "Data Science Essentials",
-    issuer: "Cisco Networking Academy",
+    title: "AI Career Readiness Training",
+    issuer: "Asean Ahead",
     date: "2026",
     image: "/certifications/certificate2.jpg",
   },
   {
-    title: "Additional Certification",
-    issuer: "Certificate Issuer",
-    date: "2026",
+    title: "Introduction to Data Science",
+    issuer: "Cisco Networking Academy",
+    date: "2025",
     image: "/certifications/certificate3.jpg",
+  },
+  {
+    title: "Data Science Essentials",
+    issuer: "Cisco Networking Academy",
+    date: "2025",
+    image: "/certifications/certificate4.jpg",
+  },
+  {
+    title: "Data Analytics Essentials",
+    issuer: "Cisco Networking Academy",
+    date: "2025",
+    image: "/certifications/certificate5.jpg",
+  },
+  {
+    title: " Android App Development for Beginners",
+    issuer: "Certificate Issuer",
+    date: "2025",
+    image: "/certifications/certificate6.jpg",
   },
 ];
 
@@ -27,6 +45,7 @@ const skills = [
   "UI/UX Design",
   "HTML & CSS",
   "JavaScript",
+  "Supabase",
   "PHP & MySQL",
   "Python",
   "Java",
@@ -48,7 +67,7 @@ export default function Home() {
       <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-[#08090d]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <a href="#" className="text-xl font-bold tracking-tight">
-            MATTEW<span className="text-cyan-400">.</span>
+            MATTEW POONIN<span className="text-cyan-400">.</span>
           </a>
 
           <div className="hidden gap-8 text-sm text-gray-300 md:flex">
@@ -97,7 +116,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold leading-tight md:text-7xl">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                Mattew.
+                Matt
               </span>
             </h1>
 
@@ -332,7 +351,7 @@ export default function Home() {
           </p>
 
           <a
-            href="mailto:your@email.com"
+            href="mailto:mattewpoonin@gmail.com"
             className="mt-8 inline-block rounded-full bg-cyan-400 px-8 py-3 font-semibold text-black transition hover:bg-cyan-300"
           >
             Email Me
@@ -343,7 +362,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 Mattew. All rights reserved.
+        © 2026 Mattew Poonin All rights reserved.
       </footer>
 
       {/* CERTIFICATE MODAL */}
